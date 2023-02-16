@@ -1,5 +1,7 @@
 pipeline {
-    agent any
+    agent {
+        label 'javaslave1'
+    }
 
     stages {
         stage('SCM-Checkout') {
